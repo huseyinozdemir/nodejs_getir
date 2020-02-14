@@ -1,0 +1,24 @@
+{
+  "name": "nodejs_getir",
+  "version": "1.0.0",
+  "description": "Enter on Nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huseyinozdemir/nodejs_getir.git"
+  },
+  "author": "Huseyin OZDEMIR <huseyin@pythontr.com>",
+  "license": "(MIT)",
+  "bugs": {
+    "url": "https://github.com/huseyinozdemir/nodejs_getir/issues"
+  },
+  "homepage": "https://github.com/huseyinozdemir/nodejs_getir#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.0"
+  }
+}
