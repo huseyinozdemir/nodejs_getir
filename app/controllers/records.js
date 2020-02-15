@@ -5,7 +5,6 @@ const asyncHandler = require('../middleware/async');
 exports.postListRecords = asyncHandler(async (req, res, next) => {
 	var code = 0;
 	var msg = 'Success';
-	let rec = null;
 	await Records.
 		aggregate([
 		    {
