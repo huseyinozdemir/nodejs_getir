@@ -13,13 +13,10 @@ npm install -g nodemon
 ## RUN server.js
 nodemon server.js OR node server.js
 
-# API Curl GET Request test
-curl http://localhost:3000/api/
-
-# An Advice
+### An Advice
 You can use Robomongo. It is a visual tool helping you manage Database MongoDB and free.
 
-# Request Example
+## Request Example
 * http://localhost:3000/api/v1/records
 * body
 ```json
@@ -31,7 +28,7 @@ You can use Robomongo. It is a visual tool helping you manage Database MongoDB a
 }
 ```
 
-# Response Example
+## Response Example
 ```json
 {
     "code": 0,
@@ -62,7 +59,7 @@ You can use Robomongo. It is a visual tool helping you manage Database MongoDB a
 ```
 
 
-# find of mongoos
+### find of mongoos
 ```nodejs
         Records.find(function(err, records) {
             if (err) {
@@ -84,7 +81,7 @@ You can use Robomongo. It is a visual tool helping you manage Database MongoDB a
         }).select({"key":"key", "createdAt":"createdAt", "_id":0}).aggregate({$sum :"counts"});
 ```
 
-# aggregate of mongoos
+### aggregate of mongoos
 ```nodejs
     Records.
         aggregate([
