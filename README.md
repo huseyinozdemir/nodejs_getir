@@ -19,6 +19,49 @@ curl http://localhost:3000/api/
 # An Advice
 You can use Robomongo. It is a visual tool helping you manage Database MongoDB and free.
 
+# Request Example
+* http://localhost:3000/api/v1/records
+* body
+```json
+{
+	"startDate": "2016-01-01",
+	"endDate": "2020-02-02",
+	"minCount": 1,
+	"maxCount": 1000
+}
+```
+
+# Response Example
+```json
+{
+    "code": 0,
+    "msg": "Success",
+    "records": [
+        {
+            "key": "2sdj3NZvCYrMFpeJ",
+            "createdAt": "2017-01-15T10:02:54.547Z",
+            "totalCount": 900
+        },
+        {
+            "key": "7d4uR598BL4XpDiX",
+            "createdAt": "2016-11-05T14:37:45.024Z",
+            "totalCount": 300
+        },
+        {
+            "key": "aWV3iBGfvrmUmc3F",
+            "createdAt": "2016-12-01T09:52:49.472Z",
+            "totalCount": 800
+        },
+        {
+            "key": "NChqTIVamZJiXNkA",
+            "createdAt": "2017-01-15T02:26:08.396Z",
+            "totalCount": 400
+        }
+		...
+}
+```
+
+
 # find of mongoos
 ```nodejs
         Records.find(function(err, records) {
