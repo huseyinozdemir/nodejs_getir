@@ -13,7 +13,7 @@ npm install -g nodemon
 ## unittest
 npm install --save-dev jest --global
 
-## unittest run on console
+## Unittests run on console
 jest --forceExit --detectOpenHandles
 ### An example UnitTest output
 ```
