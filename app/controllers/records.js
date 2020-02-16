@@ -38,25 +38,28 @@ exports.postListRecords = asyncHandler(async (req, res, next) => {
 		],
 		function(err, records) {
 		    if (err) {
+				console.log(err);
 		        code = "500";
 		        msg = err
 		        json_string = util.format('{"code": "%s", "msg": "%s"}', code, msg)
+				console.log(json_string);
 		        res.status(500).send(err);
-		        return;
+				return;
 		    }
 			if (records.length === 0) {
 		        code = "404";
 		        msg = "Records Not Found"
 		        json_string = util.format('{"code": "%s", "msg": "%s"}', code, msg)
-		        res.status(404).send(json_string);
 				console.log(json_string);
-		        return;
+		        res.status(404).send(json_string);
+				return;
 		    }
-		    res.status(200).json({
-		        code: code,
-		        msg: msg,
-		        records: records
-		    });
+			res._json = {
+                code: code,
+                msg: msg,
+                records: records
+            },
+		    res.status(200).json(res._json);
 		}
-	);
+		);
 });

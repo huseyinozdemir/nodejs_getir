@@ -5,13 +5,36 @@
 * npm init
 
 ## INSTALL Framework and Components
-npm install --save express body-parser mongoose
+npm install --save express body-parser mongoose dotenv
 
-## Don't restart
+## for Din't restart
 npm install -g nodemon
+
+## unittest
+npm install --save-dev jest --global
+
+## unittest run on console
+jest --forceExit --detectOpenHandles
+### An example UnitTest output
+```
+ PASS  app/controllers/records.test.js
+  The Records of Controllers
+    ✓ If all things are well so the response should 200 and get record. (930ms)
+    ✓ If no records so the response should 404. (144ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        2.19s, estimated 3s
+Ran all test suites.
+```
 
 ## RUN server.js
 nodemon server.js OR node server.js
+
+## DEBUG
+nodemon inspect server.js
+The Debug Key is "debugger;" and can use in the code line.
 
 ### An Advice
 You can use Robomongo. It is a visual tool helping you manage Database MongoDB and free.
