@@ -8,7 +8,7 @@
 npm install --save express body-parser mongoose dotenv
 
 ## for Din't restart
-npm install -g nodemon
+npm install --save -g nodemon
 
 ## unittest
 npm install --save-dev jest --global
@@ -161,3 +161,7 @@ You can use Robomongo. It is a visual tool helping you manage Database MongoDB a
         }
     );
 ```
+
+##Dockerize
+docker-compose build
+docker-compose up
