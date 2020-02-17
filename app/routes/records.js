@@ -6,8 +6,8 @@ const router = express.Router({ mergeParams: true });
 
 // MidleWare
 router.use(async function(req, res, next){
-	console.log('Records Checking.....');
-	next();
+    console.log('Records Checking.....');
+    next();
 });
 
 router
