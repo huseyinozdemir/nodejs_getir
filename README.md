@@ -7,10 +7,10 @@
 ## INSTALL Framework and Components
 npm install --save express body-parser mongoose dotenv
 
-## for Din't restart
+## For didn't restart
 npm install --save -g nodemon
 
-## unittest
+## Unittest
 npm install --save-dev jest --global
 
 ## Unittests run on console
@@ -82,7 +82,7 @@ You can use Robomongo. It is a visual tool helping you manage Database MongoDB a
 ```
 
 
-### find of mongoos
+### The find of mongoos
 ```nodejs
         Records.find(function(err, records) {
             if (err) {
@@ -104,7 +104,7 @@ You can use Robomongo. It is a visual tool helping you manage Database MongoDB a
         }).select({"key":"key", "createdAt":"createdAt", "_id":0}).aggregate({$sum :"counts"});
 ```
 
-### aggregate of mongoos
+### The aggregate of mongoos
 ```nodejs
     Records.
         aggregate([
