@@ -1,6 +1,6 @@
 FROM node:13.8.0-alpine
 
-RUN mkdir /app
+RUN mkdir /app	
 WORKDIR /app
 
 COPY app /app
@@ -12,8 +12,8 @@ ENV HOME=/app
 RUN apk add --update --no-cache nodejs bash
 RUN npm update
 RUN npm install
+RUN npm install dotenv@8.2.0
 RUN npm install -g nodemon
 RUN npm install -g jest
 
-RUN adduser -D user
-USER user
+USER node
