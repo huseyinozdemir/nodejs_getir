@@ -10,6 +10,11 @@ npm install --save express body-parser mongoose dotenv
 ## For didn't restart
 npm install --save -g nodemon
 
+## npm update and generate package-lock.json 
+npm update
+npm audit fix
+npm install --package-lock
+
 ## Unittest
 npm install --save-dev jest --global
 
